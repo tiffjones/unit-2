@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+            <title>Is it Safe to Swim?</title>
+
+        <!--link to leaflet stylesheet-->
+        <link rel="stylesheet" href="lib/leaflet.css">
+
+        <!-- link to local style.css file -->
+        <link rel="stylesheet" href="css/style.css" />
+        
+    </head>
+
+    <body>
+        <!--header contents-->
+        <div class="header_container">
+            <img class="header_image" src="img/Water_texture.jpg" alt="Water Texture">
+            <h1 class="main_heading"><i>Is it Safe to Swim?</i><br><span style="letter-spacing: 5px; font-family:Calibri; font-size: 15px">HEALTH OF WISCONSIN&rsquo;S LAKE MICHIGAN BEACHES</span></h1>
+        </div>
+
+        <!--map-->
+        <div id="map"></div>
+        <div id="panel"></div>
+
+        <!--source attribution-->
+        <div class="source">
+            <p>Sources: <a href="https://apps.dnr.wi.gov/beachhealth/" target="_blank">Department of Natural Resources: Beach Advisory Reports</a> and <a href="https://www.cleanlakesalliance.org/e-coli/" target="_blank">Clean Lakes Alliance</a>  |  Mapped by Tiffany Jones 2026</p>
+        </div>
+
+        <!--main text on page-->
+        <div class="body_paragraph">
+            <h2 style="color:rgb(147, 115, 95); font-family:'Cambria'">So... It&rsquo;s Beach Day. <em>Yay!</em></h2>
+            <p>When we head to the beach, our minds are filled with all the items we need to bring. Swimsuit, towel, snacks. 
+            Oh, shoot, the sunscreen! We plan for the weather. When swimming in Lake Michigan, considering wave height and rip currents is also immensely important.</p>
+            <h4 class="subhead"><em>But what about the water itself?</em></h4>
+            <p>It&rsquo;s important to consider the health of the water you&rsquo;re swimming in. <a href="https://www.cleanlakesalliance.org/e-coli/" target="_blank">E. coli</a> <em>(Escheria coli bacteria)</em> 
+            is a bacteria which can lurk in the lake water and impact your health. While some symptoms of an infection can be as mild as diarrhea, more serious illnesses can also result.</p>
+            <h4 class="subhead"><em>Why do high E. coli levels occur?</em></h4>
+            <p>To put it bluntly...<em>poop!</em> It turns out that all warm-blooded animals have E. coli living in their lower intestines and found in their feces. That waste sometimes makes it's way to beach areas and the surrounding water.
+            Animals on the beach, agricultural run-off and leaking septic systems are main sources. Large rainfalls can also impact what contaminents make their way to the water.
+           <h4 class="subhead"><em>How is this regulated?</em></h4>
+            <p>Luckily, cities and counties in Wisconsin that receive funding for beach monitoring, report results to the Wisconsin DNR, who in turn post up-to-date advisories for public reference online.
+            You can check out this resource <a href="https://apps.dnr.wi.gov/beachhealth/healthmap.aspx" target="_blank">here</a>.
+            A colored sign system is used at beach locations for on-site notifications to keep the public informed:
+                <ul>
+                    <li><b>Green:</b> Signifies safe water conditions.</li>
+                    <li><b>Yellow - Beach Advisory:</b> Signifies advisory bacteria levels (E. coli levels beyond 235 colonies/100 milliliter)</li>
+                    <li><b>Red - Beach CLOSURE:</b> Signifies levels exceeding 1000 colonies/100 mL</li>
+                </ul>
+            Keep in mind, that not all closures are due to bacteria levels in the water. Other closures may be due to heavy rainfall, flooding, chemical spills, harmful algal bloom (HAB), or dangerous (rip) current warnings.</p>
+            <p>With up-to-date information and the right resources, we can stay informed and make healthy choices about enjoying the beautiful beaches and waters along Wisconsin's Lake Michigan shoreline.</p>
+             <h4 class="subhead">How to interpret the statistics on this website</h4>
+            <p>The purpose of this site it to give an overview of beach health trends over the last several years for locations along the Wisconsin Lake Michigan shoreline. It would be a worthy goal to try to determine the causation of high E. coli level events, however, as such a complex
+            question requiring much more thorough data analysis, it is beyond the scope of this site.</p>
+            <p><b>It is my hope that this information provides readers with a base understanding to encourage further curiousity about water health in our communities and questions results as they relate 
+            to beach locations in the state and the moment in time the samples were collected.</b></p>
+            <h4 class="subhead">Resources from the Wisconsin DNR:</h4>
+            <nav>
+                <ul>
+                    <li><a href="https://apps.dnr.wi.gov/beachhealth/healthmap.aspx" target="_blank">Current Beach Status</a></li>
+                    <li><a href="https://apps.dnr.wi.gov/beachhealth/" target="_blank">Statewide Beach Health Reports</a></li>
+                    <li><a href="https://dnr.wisconsin.gov/topic/Beaches" target="_blank">The Wisconsin DNR Beach Page - Beach lists, beach maps, Q&A and <em>more!</em></a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!--footer content-->
+        <div class="footer_container">
+            <img class="footer_image" src="img/Water_texture.jpg" alt="Atwater Beach, Milwaukee">
+        
+        <!--link to leaflet-->
+        <script type="text/javascript" src="lib/leaflet-src.js"></script>
+
+        <!--link to main js file-->
+        <script type="text/javascript" src="js/main_beaches.js"></script>
+
+    </body>
+</html>

@@ -1,0 +1,189 @@
+/*map style*/
+#map {    
+    height: 500px;    
+    width: 100%;
+    display: inline-block;
+    }
+
+.legend-control-container {
+    width: 130px;
+    height: 105px;
+    font-weight: bold;
+    font-size: 10px;
+    background-color: rgba(238,242,241,.8);;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    border: solid #d9c9c0 1px;
+}
+
+/*controls paragraph element of legend control container */
+.legend-control-container p{
+    margin: 0;
+    color: rgb(14, 68, 77); /*text color within legend*/
+    font-family:'Calibri';
+    font-size: 12px;
+    line-height: 14.5px;
+}
+
+.sequence-control-container {    
+    width: 325px;  
+    height: 20px;  
+    background-color: rgba(238,242,241,.8);
+    padding: 5px;  
+    line-height: 20px;  
+    border: solid gray 0px;
+    border-radius: 5px;
+}
+
+input[type=range] {
+    accent-color: #382f2b; /* Change to your desired color */
+}
+
+.range-slider {  
+    width: 250px;
+    height: 6px;
+}  
+
+.step {  
+    width: 28px; 
+    /*background-color:#bbdcde;*/
+    /*background-color:#eeeeee;*/
+    border:#382f2b 0px;
+}  
+
+/*size of forward/reverse arrow icons*/
+.step img {  
+    width: 90%;  
+    height: auto;
+}  
+
+/*position of arrow icon to slider*/
+#forward {  
+    float: right;
+}  
+
+#reverse {  
+    float: left;  
+}
+
+/*popup content styling*/
+.leaflet-popup-content p {
+    margin: 0em 0; /*first number = amt of indent on second line / second number = paragraph spacing*/
+}
+
+/*style for internal popup compenents*/
+.leaflet-popup-content {
+    color: rgb(14, 68, 77); /*text color within popup*/
+    margin-left: 10px; /*area around text*/
+    margin-right: 10px; /*area around text*/
+    margin-top: 10px; /*area around text*/
+    margin-bottom: 10px; /*area around text*/
+    font-family: 'Calibri';
+    background-color: #d9c9c0;
+}
+
+/*style for popup exterior*/
+.leaflet-popup-content-wrapper, .leaflet-popup-tip {
+    background-color: #d9c9c0; /*background color of popup*/
+    border-radius: 0;
+}
+
+/*container to hold space for image and text at top of page*/
+.header_container {
+    position: relative;
+    height: 100px;
+    width: 100%;
+    overflow: hidden; /*crops image*/
+    background-color:#153e42 ;
+}
+
+/*image at top of page*/
+.header_image {
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    position: absolute;
+    top: 0;
+    left:0;
+    object-position:center;
+    z-index: 0; /* image behind text */
+    mix-blend-mode: multiply;
+    opacity: 50%;
+}
+
+/*text at top of page*/
+.main_heading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(149, 227, 206);
+    font-family: 'Cambria';
+    z-index: 1; /* text over image */
+    margin: 0;
+    font-size: 30px;
+    white-space: nowrap;
+    letter-spacing: 1px;
+    text-align: center;
+    line-height: .75;
+}
+
+/*body text style*/
+.body_paragraph {
+    padding-left: 5%;
+    padding-right: 5%;
+    color: #000000;
+    font-family: 'Calibri';
+    font-size: medium;
+}
+
+.subhead {
+    font-family: 'Cambria';
+    color: rgb(147, 115, 95);
+}
+
+.source {
+    font-family: 'Calibri';
+    font-size: 10px;
+    color: #7f7f7f;
+}
+
+.footer_container {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    overflow: hidden; /*crops image*/
+    background-color:#153e42 ;
+
+}
+
+/*image at top of page*/
+.footer_image {
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    position: absolute;
+    top: 0;
+    left:0;
+    object-position:center;
+    z-index: 0; /* image behind text */
+    mix-blend-mode: multiply;
+    opacity: 50%;
+}
+
+/* couldn't figure out how to create default leaflet popup class to these styles didn't overwrite the default
+
+.initialPopup, .leaflet-popup-content-wrapper {
+    width: 150px;
+    height: 200px;
+}
+
+.initialPopup, .leaflet-popup-content {
+    width: auto !important;
+    margin: 10px;
+}
+
+.initialPopup, .leaflet-popup-tip-container {
+    display: none;
+}
