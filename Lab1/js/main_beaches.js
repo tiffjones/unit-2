@@ -318,7 +318,7 @@ function createInitialPopup() {
 //access the beach data
 function getData(map){
 
-    fetch("data/LakeMich_beach.geojson")
+    fetch("data/lakeMich_beach.geojson")
         .then(function(response){
             return response.json();
         })
@@ -334,4 +334,5 @@ function getData(map){
 };
 
 //initiates map upon load
+
 document.addEventListener('DOMContentLoaded',createMap);
