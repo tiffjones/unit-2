@@ -2,6 +2,9 @@
 
 ### **Author:** Tiffany Jones
 
+### **Link:**
+* [Is it Safe to Swim?](https://tiffjones.github.io/unit-2/Lab1/)
+
 ### **Dependencies:**
 * [Leaflet 1.9.4](https://leafletjs.com/reference)
 
